@@ -33,7 +33,7 @@ const DISPLAYCOUNTRIES = 'population-metrics-app/redux/countries/countriesSlice/
 
 const URL = 'https://restcountries.com/v3.1/region/africa';
 
-const fetchCountries = createAsyncThunk(DISPLAYCOUNTRIES, async () => {
+export const fetchCountries = createAsyncThunk(DISPLAYCOUNTRIES, async () => {
   const response = await axios.get(URL);
   const result = response.data;
   return result;
