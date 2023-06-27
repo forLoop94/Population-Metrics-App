@@ -12,7 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Countries />} />
           <Route
-            path="/country"
+            path="/country/:id"
             element={<CountryDetails />}
           />
         </Routes>
