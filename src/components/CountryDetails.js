@@ -10,7 +10,7 @@ const CountryDetails = () => {
 
   return (
     <div>
-      <h3>{countries[index].image}</h3>
+      <img src={countries[index].image} alt={countries[index].name} />
       <h3>{countries[index].name}</h3>
 
       <div>
