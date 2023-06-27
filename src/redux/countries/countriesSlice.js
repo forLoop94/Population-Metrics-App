@@ -36,7 +36,18 @@ const URL = 'https://restcountries.com/v3.1/region/africa';
 export const fetchCountries = createAsyncThunk(DISPLAYCOUNTRIES, async () => {
   const response = await axios.get(URL);
   const result = response.data;
-  return result;
+
+  return {
+    countries: result.map((country) => ({
+      id: country.area,
+      population: country.population,
+      name: country.name.official,
+      capital: country.capital[0],
+      image: country.flags.png,
+      timezone: country.timezones[0],
+      subregion: country.subregion,
+    })),
+  };
 });
 
 const countriesSlice = createSlice({
