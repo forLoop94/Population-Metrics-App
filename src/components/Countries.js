@@ -6,8 +6,6 @@ const Countries = () => {
   const countriesArr = useSelector((state) => state.countries.countriesData);
   return (
     <div>
-      <h2>Africa</h2>
-      <p>All Countries</p>
       <ul>
         {
           countriesArr.map((country) => (
