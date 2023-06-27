@@ -26,10 +26,6 @@ const CountryDetails = () => {
         <span>{countries[index].subregion}</span>
       </div>
       <div>
-        <span>Country code:</span>
-        <span>{countries[index].id}</span>
-      </div>
-      <div>
         <span>official Language:</span>
         <span>{countries[index].language}</span>
       </div>
