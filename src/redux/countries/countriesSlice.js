@@ -56,7 +56,7 @@ const countriesSlice = createSlice({
   reducers: {},
   extraReducers: (build) => {
     build.addCase(fetchCountries.fulfilled, (state, action) => {
-      state.countriesData = action.payload;
+      state.countriesData = action.payload.countries;
     });
   },
 });

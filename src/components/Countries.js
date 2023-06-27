@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import Country from './Country';
 
 const Countries = () => {
-  const countriesArr = useSelector((state) => state.countries.countriesData.countries);
+  const countriesArr = useSelector((state) => state.countries.countriesData);
   return (
     <div>
       <h2>Africa</h2>
@@ -14,7 +14,7 @@ const Countries = () => {
             <Country
               key={country.id}
               name={country.name}
-              flag={country.flag}
+              flag={country.image}
               region={country.region}
               population={country.population}
               id={country.id}
