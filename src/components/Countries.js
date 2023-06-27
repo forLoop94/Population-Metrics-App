@@ -13,9 +13,12 @@ const Countries = () => {
               key={country.id}
               name={country.name}
               flag={country.image}
-              region={country.region}
+              region={country.subregion}
               population={country.population}
               id={country.id}
+              languages={country.languages}
+              capital={country.capital}
+              timezone={country.timezone}
             />
           ))
         }

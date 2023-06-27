@@ -12,10 +12,6 @@ const Country = ({
       </div>
     </Link>
     <h2>{name}</h2>
-    <div>
-      <span>Country:</span>
-      <span>{name}</span>
-    </div>
   </div>
 );
 
