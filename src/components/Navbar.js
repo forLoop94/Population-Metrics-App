@@ -12,7 +12,7 @@ const Navbar = (props) => {
         <FaChevronLeft color="blue" fontSize="12px" />
       </Link>
       <div>{children}</div>
-      <div>
+      <div className="extreme-right">
         <FaMicrophone color="blue" fontSize="12px" />
         <FaCog color="blue" fontSize="12px" />
       </div>

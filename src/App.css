@@ -2,10 +2,72 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #fff;
 }
 
 header {
   display: flex;
   justify-content: space-between;
-  margin: 0.5rem 1rem 2rem 1rem;
+  padding: 0.5rem 1rem 2rem 1rem;
+  background-color: #5685e2;
+}
+
+.search {
+  margin-top: 20%;
+}
+
+.extreme-right {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+}
+
+input {
+  width: 8rem;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid grey;
+}
+
+button {
+  background: transparent;
+  border: none;
+  margin-left: 5px;
+}
+
+.headline {
+  display: flex;
+  justify-content: space-between;
+  background-color: #7a9ad9;
+}
+
+.title {
+  width: 50vw;
+  padding: 5%;
+}
+
+.african-map {
+  width: 50%;
+}
+
+.country-section-title {
+  background-color: #3b70da;
+  padding: 1rem;
+}
+
+.country-list, .details {
+  background-color: #5685e2;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 320px;
+  row-gap: 1rem;
+}
+
+.flag {
+  max-width: 300px;
 }

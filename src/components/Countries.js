@@ -5,8 +5,8 @@ import Country from './Country';
 const Countries = () => {
   const countriesArr = useSelector((state) => state.countries.countriesData);
   return (
-    <div>
-      <ul>
+    <div className="country-list">
+      <div className="grid-container">
         {
           countriesArr.map((country) => (
             <Country
@@ -22,7 +22,7 @@ const Countries = () => {
             />
           ))
         }
-      </ul>
+      </div>
     </div>
   );
 };

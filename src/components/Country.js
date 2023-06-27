@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom';
 const Country = ({
   id, name, flag,
 }) => (
-  <div>
+  <div className="grid-item">
     <Link to={`/country/${id}`} key={id}>
       <div>
-        <img src={flag} alt={name} />
+        <img src={flag} alt={name} className="flag" />
       </div>
     </Link>
     <h2>{name}</h2>
@@ -18,8 +18,6 @@ const Country = ({
 Country.propTypes = {
   id: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
-  // region: PropTypes.string.isRequired,
-  // population: PropTypes.number.isRequired,
   flag: PropTypes.string.isRequired,
 };
 
