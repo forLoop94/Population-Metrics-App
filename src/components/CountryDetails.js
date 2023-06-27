@@ -10,20 +10,28 @@ const CountryDetails = () => {
 
   return (
     <div>
-      <h3>{countries[index].flag}</h3>
+      <img src={countries[index].image} alt={countries[index].name} />
       <h3>{countries[index].name}</h3>
 
+      <div>
+        <span>Capital:</span>
+        <span>{countries[index].capital}</span>
+      </div>
       <div>
         <span>Population:</span>
         <span>{countries[index].population}</span>
       </div>
       <div>
-        <span>Region:</span>
-        <span>{countries[index].region}</span>
+        <span>Subregion:</span>
+        <span>{countries[index].subregion}</span>
       </div>
       <div>
-        <span>Country code:</span>
-        <span>{countries[index].id}</span>
+        <span>official Language:</span>
+        <span>{countries[index].language}</span>
+      </div>
+      <div>
+        <span>TimeZone:</span>
+        <span>{countries[index].timezone}</span>
       </div>
     </div>
   );

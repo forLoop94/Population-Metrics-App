@@ -8,15 +8,10 @@ const Country = ({
   <div>
     <Link to={`/country/${id}`} key={id}>
       <div>
-        <span>Flag:</span>
-        <span>{flag}</span>
+        <img src={flag} alt={name} />
       </div>
     </Link>
     <h2>{name}</h2>
-    <div>
-      <span>Country:</span>
-      <span>{name}</span>
-    </div>
   </div>
 );
 
