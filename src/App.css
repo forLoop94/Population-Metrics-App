@@ -5,10 +5,16 @@
   color: #fff;
 }
 
+body {
+  background-color: #7a9ad9;
+}
+
 header {
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem 1rem 2rem 1rem;
+  align-items: center;
+  padding: 0rem 2rem;
+  height: 10vh;
   background-color: #5685e2;
 }
 
@@ -52,7 +58,7 @@ button {
 
 .country-section-title {
   background-color: #3b70da;
-  padding: 1rem;
+  padding: 1rem 2rem;
 }
 
 .country-list, .details {
@@ -95,8 +101,6 @@ a {
 .details-container {
   display: flex;
   justify-content: center;
-  background-color: #3b70da;
-  height: 100vh;
   padding-top: 2rem;
 }
 
