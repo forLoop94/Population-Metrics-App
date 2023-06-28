@@ -4,8 +4,6 @@
   <h1><b>Populatrics Metrics Webapp</b></h1>
 </div>
 
-<!-- TABLE OF CONTENTS -->
-
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
