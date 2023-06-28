@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Population-Metrics-App/static/css/main.78020c2e.css",
+    "main.css": "/Population-Metrics-App/static/css/main.db7ef2d6.css",
     "main.js": "/Population-Metrics-App/static/js/main.0dc6d73f.js",
     "static/media/africa.png": "/Population-Metrics-App/static/media/africa.819315dd1bd1613d2a3c.png",
     "index.html": "/Population-Metrics-App/index.html",
-    "main.78020c2e.css.map": "/Population-Metrics-App/static/css/main.78020c2e.css.map",
+    "main.db7ef2d6.css.map": "/Population-Metrics-App/static/css/main.db7ef2d6.css.map",
     "main.0dc6d73f.js.map": "/Population-Metrics-App/static/js/main.0dc6d73f.js.map"
   },
   "entrypoints": [
-    "static/css/main.78020c2e.css",
+    "static/css/main.db7ef2d6.css",
     "static/js/main.0dc6d73f.js"
   ]
 }
