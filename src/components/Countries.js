@@ -8,9 +8,10 @@ const Countries = () => {
     <div>
       <ul>
         {
-          countriesArr.map((country) => (
+          countriesArr.map((country, index) => (
             <Country
               key={country.id}
+              index={index}
               name={country.name}
               flag={country.image}
               region={country.subregion}
