@@ -19,8 +19,6 @@ Country.propTypes = {
   id: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
   index: PropTypes.number.isRequired,
-  // region: PropTypes.string.isRequired,
-  // population: PropTypes.number.isRequired,
   flag: PropTypes.string.isRequired,
 };
 
