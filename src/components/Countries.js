@@ -5,12 +5,13 @@ import Country from './Country';
 const Countries = () => {
   const countriesArr = useSelector((state) => state.countries.countriesData);
   return (
-    <div className="country-list">
-      <div className="grid-container">
+    <div>
+      <ul>
         {
-          countriesArr.map((country) => (
+          countriesArr.map((country, index) => (
             <Country
               key={country.id}
+              index={index}
               name={country.name}
               flag={country.image}
               region={country.subregion}
@@ -22,7 +23,7 @@ const Countries = () => {
             />
           ))
         }
-      </div>
+      </ul>
     </div>
   );
 };

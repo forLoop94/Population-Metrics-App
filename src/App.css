@@ -64,10 +64,60 @@ button {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 320px;
-  row-gap: 1rem;
+  grid-template-columns: 320px 320px;
 }
 
 .flag {
-  max-width: 300px;
+  width: 50px;
+}
+
+.light-cards, .dark-cards {
+  background-color: #5685e2;
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.dark-cards {
+  background-color: #3b70da;
+}
+
+.country-name {
+  width: 60%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.details-container {
+  display: flex;
+  justify-content: center;
+  background-color: #3b70da;
+  height: 100vh;
+  padding-top: 2rem;
+}
+
+.details-list {
+  margin-top: 2rem;
+}
+
+.details-list > div {
+ display: flex;
+ justify-content: space-between;
+}
+
+.details-name {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: 320px, 320px;
+  }
+  .country-name {
+    color: red;
+  }
 }
