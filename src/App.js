@@ -1,4 +1,6 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import {
+  BrowserRouter, Routes, Route, Navigate,
+} from 'react-router-dom';
 import './App.css';
 import CountryDetails from './components/CountryDetails';
 import Navbar from './components/Navbar';
@@ -10,7 +12,8 @@ function App() {
       <div>
         <Navbar>Most Views</Navbar>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Navigate to="/home" />} />
+          <Route path="/home" element={<Home />} />
           <Route
             path="/country/:id"
             element={<CountryDetails />}
