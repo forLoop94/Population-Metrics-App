@@ -11,6 +11,13 @@ function App() {
     <BrowserRouter>
       <div>
         <Navbar>Most Views</Navbar>
+        {/* <Routes>
+          <Route path="/" element={<Home />} />
+          <Route
+            path="/country/:id"
+            element={<CountryDetails />}
+          />
+        </Routes> */}
         <Routes>
           <Route path="/" element={<Navigate to="/home" />} />
           <Route path="/home" element={<Home />} />
