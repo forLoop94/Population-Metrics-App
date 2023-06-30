@@ -75,7 +75,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](http://forLoop94.github.io/Population-Metrics-App/)
+- [Live Demo Link](https://metrics-webapp-6mnb.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
