@@ -9,12 +9,12 @@ const Navbar = (props) => {
   return (
     <header>
       <Link to="/">
-        <FaChevronLeft color="blue" fontSize="12px" />
+        <FaChevronLeft fontSize="12px" />
       </Link>
       <div>{children}</div>
       <div className="extreme-right">
-        <FaMicrophone color="blue" fontSize="12px" />
-        <FaCog color="blue" fontSize="12px" />
+        <FaMicrophone fontSize="12px" />
+        <FaCog fontSize="12px" />
       </div>
     </header>
   );
