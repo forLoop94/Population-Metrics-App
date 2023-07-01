@@ -8,13 +8,16 @@ const Navbar = (props) => {
   const { children } = props;
   return (
     <header>
-      <Link to="/">
-        <FaChevronLeft fontSize="12px" />
-      </Link>
+      <div className="nav-left">
+        <Link to="/">
+          <FaChevronLeft fontSize="15px" />
+        </Link>
+        <p className="year">2023</p>
+      </div>
       <div>{children}</div>
       <div className="extreme-right">
-        <FaMicrophone fontSize="12px" />
-        <FaCog fontSize="12px" />
+        <FaMicrophone fontSize="15px" />
+        <FaCog fontSize="15px" />
       </div>
     </header>
   );

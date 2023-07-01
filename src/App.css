@@ -3,10 +3,11 @@
   padding: 0;
   box-sizing: border-box;
   color: #fff;
+  font-family: Lato, sans-serif;
 }
 
 body {
-  background-color: #7a9ad9;
+  background-color: rgb(226, 3, 100);
 }
 
 header {
@@ -15,7 +16,7 @@ header {
   align-items: center;
   padding: 0 2rem;
   height: 10vh;
-  background-color: #5685e2;
+  background-color: rgb(226, 3, 100);
 }
 
 .search {
@@ -44,12 +45,12 @@ button {
 .headline {
   display: flex;
   justify-content: space-between;
-  background-color: #7a9ad9;
+  background-color: rgba(245, 5, 121);
 }
 
 .title {
   width: 50vw;
-  padding: 5%;
+  padding: 10%;
 }
 
 .african-map {
@@ -57,8 +58,16 @@ button {
 }
 
 .country-section-title {
-  background-color: #3b70da;
+  background-color: rgb(226, 3, 100);
   padding: 1rem 2rem;
+}
+
+.nav-left {
+  display: flex;
+}
+
+.year {
+  margin-left: 3px;
 }
 
 .country-list,
@@ -71,11 +80,29 @@ button {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 320px 320px;
+  grid-template-columns: auto auto;
+  gap: 5px;
 }
 
 .flag {
-  width: 50px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.arrow {
+  z-index: 2;
+  position: absolute;
+  right: 1rem;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.arrow:hover {
+  font-size: 20px;
 }
 
 .light-cards,
@@ -83,8 +110,10 @@ button {
   background-color: #5685e2;
   display: flex;
   justify-content: space-between;
-  height: auto;
+  flex-direction: column;
+  height: 30vh;
   align-items: center;
+  position: relative;
   padding: 1rem 2rem;
 }
 
@@ -93,7 +122,25 @@ button {
 }
 
 .country-name {
-  width: 60%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+}
+
+.country-name > h2,
+.country-name > p {
+  font-size: 18px;
+  position: absolute;
+  bottom: 2rem;
+  right: 0.5rem;
+}
+
+.country-name > p {
+  bottom: 0.5rem;
+  font-size: 15px;
 }
 
 a {
@@ -113,6 +160,7 @@ a {
 .details-list > div {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 0.5rem;
 }
 
 .details-name {

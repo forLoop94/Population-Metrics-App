@@ -6,7 +6,7 @@ const Countries = () => {
   const countriesArr = useSelector((state) => state.countries.countriesData);
   return (
     <div>
-      <ul>
+      <div className="grid-container">
         {
           countriesArr.map((country, index) => (
             <Country
@@ -23,7 +23,7 @@ const Countries = () => {
             />
           ))
         }
-      </ul>
+      </div>
     </div>
   );
 };

@@ -36,7 +36,7 @@ const Home = () => {
         <div className="headline">
           <img src={africa} alt="African Map" className="african-map" />
           <div className="title">
-            <h3>Africa</h3>
+            <h1>Africa</h1>
             <p>1.216 Billion</p>
             <div className="search">
               <input
