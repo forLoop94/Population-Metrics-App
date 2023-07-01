@@ -132,7 +132,7 @@ button {
 
 .country-name > h2,
 .country-name > p {
-  font-size: 18px;
+  font-size: 15px;
   position: absolute;
   bottom: 2rem;
   right: 0.5rem;
@@ -140,7 +140,8 @@ button {
 
 .country-name > p {
   bottom: 0.5rem;
-  font-size: 15px;
+  font-size: 12px;
+  font-weight: 600;
 }
 
 a {
